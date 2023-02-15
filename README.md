@@ -8,11 +8,5 @@
   - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
     - `ublock-origin.backup.txt`
 
-## Zsh
-- Install `zsh` package and [change](https://askubuntu.com/a/660014) `bash` to `zsh`
-- `git clone` plugins into `~/.config/zsh/plugins`
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
 ## Other
 - To avoid the system create directories which aren't in `~/.config/user-dirs.dirs` set `enabled=False` in `/etc/xdg/user-dirs.conf`
