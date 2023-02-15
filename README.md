@@ -8,7 +8,4 @@ Git clone using `git clone --recurse-submodules` to clone all submodules (zsh pl
   - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
   - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
   - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-    - `ublock-origin.backup.txt`
-
-## Other
-- To avoid the system create directories which aren't in `~/.config/user-dirs.dirs` set `enabled=False` in `/etc/xdg/user-dirs.conf`
+    - `ublock-origin.backup.txt` is my backup of my filter lists, you can import it in uBlock Origin settings.

@@ -3,27 +3,13 @@
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
-# Use $XINITRC variable if file exists.
-[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
-
-se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
-
 # Common
 alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vIrf" \
 	mkdir="mkdir -pv" \
-	lsla="ls -la" \
-	g="git" \
-	e="$EDITOR" \
-	v="$EDITOR" \
-	ka="killall" \
-	s="sxiv" \
-	z="zathura" \
-	m="mpv" \
-	todo="cat ~/TODO.md" \
-	vtodo="vim ~/TODO.md"
+	lsla="ls -la"
 
 # Colorize commands when possible.
 alias \
@@ -31,21 +17,3 @@ alias \
 	grep="grep --color=auto" \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
-
-# Dnf
-#alias \
-#	dnfi="sudo dnf install" \
-#	dnfu="sudo dnf update" \
-#	dnfr="sudo dnf remove" \
-#	dnfc="sudo dnf autoremove"
-
-# Pacman
-alias \
-	paci="sudo pacman -S" \
-	pacu="sudo pacman -Syyu" \
-	pacr="sudo pacman -R" \
-	pacc="sudo pacman -Qdtq | pacman -Rs -"
-
-# Cleanup
-alias \
-	yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'

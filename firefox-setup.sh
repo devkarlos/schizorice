@@ -3,20 +3,28 @@
 # ./firefoxSetup.sh <firefox profile name>
 #
 
-if [ ! -x /usr/bin/firefox ]; then
-	echo "Firefox is not installed, please install it"
-	exit
-fi
-
 if [ -z "$1" ]; then
 	echo "No argument supplied"
 	exit
 fi
 
-firefox -CreateProfile "$1" # $HOME/.mozilla/firefox/"
+if [ "$(uname)" == "Darwin" ]; then
+	if [ ! -x /Applications/Firefox.app/Contents/MacOS/firefox ]; then
+		echo "Firefox is not installed, please install it"
+		exit
+	fi
+	
+    open -a firefox -CreateProfile "$1" # $HOME/Library/Application Support/Firefox/Profiles/"
+	FIREFOX_PROFILE_DIR=`find "$HOME/Library/Application Support/Firefox/Profiles" -name "*$1*" -type d`
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	if [ ! -x /usr/bin/firefox ]; then
+		echo "Firefox is not installed, please install it"
+		exit
+	fi
 
-# Get profile dir
-FIREFOX_PROFILE_DIR=`find "$HOME/.mozilla/firefox" -name "*$1*" -type d`
+    firefox -CreateProfile "$1" # $HOME/.mozilla/firefox/"
+	FIREFOX_PROFILE_DIR=`find "$HOME/.mozilla/firefox" -name "*$1*" -type d`
+fi
 
 if [ -x firefox-setup.temp ]; then
 	rm -rf firefox-setup.temp
