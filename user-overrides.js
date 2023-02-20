@@ -30,3 +30,6 @@ user_pref("permissions.default.geo", 2);
 user_pref("permissions.default.camera", 2);
 user_pref("permissions.default.microphone", 2);
 user_pref("permissions.default.xr", 2);
+
+// Allows websites to determine your time zone
+user_pref("privacy.resistFingerprinting", true);
