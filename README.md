@@ -12,4 +12,4 @@ Git clone using `git clone --recursive` to clone all submodules (zsh plugins).
     - `.local/share/ublock-origin.backup.txt`
 
 ## VS Code
-- Both `settings.json` and `extensions.json` are in `.local/share`. Copy the content into appropriate file (settings are usually in `~/.config/Code/User` and extensions in `~/.vscode). If one of the files doesn't exist create a new one. Exclude `vscode-` at the beginning.
+- Copy `.local/share/vscode-settings.json` into `~/Library/Application Support/Code/User`. Rename it to just `settings.json`
