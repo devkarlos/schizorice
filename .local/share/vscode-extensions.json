@@ -1,0 +1,22 @@
+{
+    "recommendations": [
+        "antfu.icons-carbon",
+        "xaver.clang-format",
+        "vscode-clangd",
+        "twxs.cmake",
+        "vscjava.vscode-java-debug",
+        "ms-azuretools.vscode-docker",
+        "vscjava.vscode-java-pack",
+        "GitHub.copilot",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "vscjava.vscode-java-test",
+        "antfu.theme-vitesse"
+    ]
+}
+
