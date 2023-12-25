@@ -23,7 +23,7 @@ user_pref("extensions.pocket.enabled", false);
 
 // Firefox sync
 user_pref("identity.fxaccounts.enabled", true);
-user_pref("identity.sync.tokenserver.url", "https://ffsyncsever.plantiful.cz/token/1.0/sync/1.5");
+user_pref("identity.sync.tokenserver.uri", "https://ffsyncsever.plantiful.cz/token/1.0/sync/1.5");
 
 // Set default permissions
 user_pref("permissions.default.geo", 2);
