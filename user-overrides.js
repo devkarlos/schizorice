@@ -23,7 +23,7 @@ user_pref("extensions.pocket.enabled", false);
 
 // Firefox sync
 user_pref("identity.fxaccounts.enabled", true);
-user_pref("identity.sync.tokenserver.url", "https://firefoxsync.myhomelan.xyz/token/1.0/sync/1.5");
+user_pref("identity.sync.tokenserver.url", "https://ffsyncsever.plantiful.cz/token/1.0/sync/1.5");
 
 // Set default permissions
 user_pref("permissions.default.geo", 2);
@@ -31,5 +31,11 @@ user_pref("permissions.default.camera", 2);
 user_pref("permissions.default.microphone", 2);
 user_pref("permissions.default.xr", 2);
 
-// Allows websites to determine your time zone
-user_pref("privacy.resistFingerprinting", true);
+// Dont save passwords
+user_pref("signon.rememberSignons", false);
+
+// Enable webgl
+user_pref("webgl.disabled", false);
+
+// Disable letterboxing
+user_pref("privacy.resistFingerprinting.letterboxing", false);
