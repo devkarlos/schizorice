@@ -1,11 +1,15 @@
 {
-  "timeStamp": 1670146978504,
-  "version": "1.45.2",
+  "timeStamp": 1703518996292,
+  "version": "1.54.0",
   "userSettings": {
     "advancedUserEnabled": true,
-    "uiAccentCustom0": "#0000ff",
+    "uiAccentCustom": true,
+    "uiAccentCustom0": "#8000ff",
     "uiTheme": "dark",
-    "importedLists": [],
+    "externalLists": "https://filters.adtidy.org/extension/ublock/filters/14.txt",
+    "importedLists": [
+      "https://filters.adtidy.org/extension/ublock/filters/14.txt"
+    ],
     "popupPanelSections": 31,
     "tooltipsDisabled": true
   },
@@ -15,18 +19,26 @@
     "ublock-badware",
     "ublock-privacy",
     "ublock-quick-fixes",
-    "ublock-abuse",
     "ublock-unbreak",
     "easylist",
     "adguard-spyware-url",
     "block-lan",
     "easyprivacy",
     "urlhaus-1",
-    "adguard-annoyance",
+    "plowe-0",
+    "adguard-mobile-app-banners",
+    "adguard-other-annoyances",
+    "adguard-popup-overlays",
+    "adguard-widgets",
+    "adguard-cookies",
+    "ublock-cookies-adguard",
+    "easylist-newsletters",
+    "easylist-notifications",
+    "easylist-annoyances",
     "fanboy-cookiemonster",
     "ublock-annoyances",
-    "plowe-0",
-    "CZE-0"
+    "CZE-0",
+    "https://filters.adtidy.org/extension/ublock/filters/14.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
