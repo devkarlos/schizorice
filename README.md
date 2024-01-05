@@ -7,7 +7,7 @@ Git clone using `git clone --recursive` to clone all submodules (zsh plugins).
   - [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
   - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
   - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
-    - '.local/share/sponsorblock.backup.json` 
+    - `.local/share/sponsorblock.backup.json`
   - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
     - `.local/share/ublock-origin.backup.txt`
 
