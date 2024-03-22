@@ -1,103 +1,80 @@
 {
-  // Telemetry
-  "telemetry.telemetryLevel": "off",
-  "redhat.telemetry.enabled": false,
-  // Security
-  "security.workspace.trust.banner": "never",
-  // Themes
-  "workbench.preferredDarkColorTheme": "Default Dark Modern",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
-  "workbench.productIconTheme": "Default",
-  "workbench.iconTheme": "vs-seti",
-  // Editor
-  "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
-  },
-  "C_Cpp.autocompleteAddParentheses": true,
-  "editor.cursorBlinking": "blink",
-  "editor.cursorStyle": "line",
-  "editor.fontFamily": "Input Mono, Fira Code, monospace",
-  "editor.fontWeight": "normal",
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0,
-  "editor.tabSize": 4,
-  "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": "off",
-  "editor.find.addExtraSpaceOnTop": false,
-  "editor.guides.bracketPairs": "active",
-  "editor.inlineSuggest.enabled": true,
-  "editor.renderWhitespace": "selection",
-  "editor.suggestSelection": "first",
-  "editor.unicodeHighlight.invisibleCharacters": true,
-  // Explorer
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  // Window
-  "window.autoDetectColorScheme": true,
-  "window.dialogStyle": "custom",
-  "window.titleBarStyle": "custom",
-  // Workbench Editor
-  "workbench.editor.closeOnFileDelete": false,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
-  // Workbench Settings
-  "workbench.list.smoothScrolling": true,
-  "workbench.sideBar.location": "left",
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10,
-  // Extensions
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "extensions.ignoreRecommendations": true,
-  // Files
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  // Git
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.untrackedChanges": "separate",
-  // Terminal
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.enabled": true,
-  // Source Control Management (SCM)
-  "scm.diffDecorationsGutterWidth": 2,
-  // Diff Editor
-  "diffEditor.ignoreTrimWhitespace": false,
-  // Search Exclusions
-  "search.exclude": {
-    "**/.git": true,
-    "**/.github": true,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true,
-    "**/tmp": true,
-    "**/yarn.lock": true
-  },
-  // Extensions
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "python": false,
-    "cpp": false
-  },
-  "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "cmake.configureOnOpen": true,
-  "security.workspace.trust.untrustedFiles": "open",
+    // Telemetry
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false,
+    // Security
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    // Themes
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.productIconTheme": "Default",
+    "workbench.iconTheme": "vs-seti",
+    // Editor
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Input Mono, Fira Code, monospace",
+    "editor.fontWeight": "normal",
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.guides.bracketPairs": "active",
+    "editor.inlineSuggest.enabled": true,
+    "editor.renderWhitespace": "selection",
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // Window
+    "window.autoDetectColorScheme": true,
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
+    // Workbench Editor
+    "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabCloseButton": "left",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
+    "workbench.editor.tabActionLocation": "left",
+    // Workbench Settings
+    "workbench.list.smoothScrolling": true,
+    "workbench.sideBar.location": "left",
+    "workbench.tree.expandMode": "singleClick",
+    "workbench.tree.indent": 10,
+    // Extensions
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false,
+        "cpp": false
+    },
+    "cmake.configureOnOpen": true,
+    // Files
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.untrackedChanges": "separate",
+    // Terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.activityBar.iconClickBehavior": "focus",
 }
