@@ -1,14 +1,13 @@
 {
-  "timeStamp": 1703518996292,
-  "version": "1.54.0",
+  "timeStamp": 1711291519731,
+  "version": "1.56.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "uiAccentCustom": true,
     "uiAccentCustom0": "#8000ff",
-    "uiTheme": "dark",
-    "externalLists": "https://filters.adtidy.org/extension/ublock/filters/14.txt",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
     "importedLists": [
-      "https://filters.adtidy.org/extension/ublock/filters/14.txt"
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
     ],
     "popupPanelSections": 31,
     "tooltipsDisabled": true
@@ -29,6 +28,7 @@
     "adguard-mobile-app-banners",
     "adguard-other-annoyances",
     "adguard-popup-overlays",
+    "adguard-social",
     "adguard-widgets",
     "adguard-cookies",
     "ublock-cookies-adguard",
@@ -38,7 +38,7 @@
     "fanboy-cookiemonster",
     "ublock-annoyances",
     "CZE-0",
-    "https://filters.adtidy.org/extension/ublock/filters/14.txt"
+    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
