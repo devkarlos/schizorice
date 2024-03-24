@@ -4,6 +4,8 @@
 
 ### Hardening
 
+**There are custom DNS settings in the `user-overrides.js`, so remove them when you don't plan to use them**
+
 I use [arkenfox user.js](https://github.com/arkenfox/user.js) to harden my firefox profile.
 
 - **Linux**: Use `firefox-setup.sh` which will setup everything for you.
