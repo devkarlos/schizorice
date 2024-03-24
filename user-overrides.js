@@ -20,7 +20,6 @@ user_pref("permissions.default.geo", 2); // Blocks location access by default
 user_pref("geo.enabled", false); // Fully disables location access
 user_pref("media.navigator.enabled", false); // Disables certain media navigator features
 
-
 ////////////////////////
 // Re-enable features //
 ////////////////////////
@@ -40,6 +39,6 @@ user_pref("browser.shell.shortcutFavicons", true); // Enables favicons in shortc
 user_pref("privacy.sanitize.sanitizeOnShutdown", false); // Disables clearing data on shutdown
 user_pref("privacy.clearOnShutdown.history", false); // Disables clearing history on shutdown
 user_pref("network.trr.mode", 3); // Next DNS requirement
-user_pref("network.trr.custom_uri", "https://dns.nextdns.io/69994b"); // Custom DNS address
-user_pref("network.trr.uri", "https://dns.nextdns.io/69994b"); // DNS address
+user_pref("network.trr.custom_uri", ""); // Custom DNS address
+user_pref("network.trr.uri", ""); // DNS address
 user_pref("general.autoScroll", true); // Enables middle click scroll

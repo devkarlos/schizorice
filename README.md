@@ -4,9 +4,9 @@
 
 ### Hardening
 
-**I use custom DNS server (NextDNS), so first delete or replace it from the `user-overrides.js`**
+I use [arkenfox user.js](https://github.com/arkenfox/user.js) to harden my firefox profile.
 
-- **Linux**: Use `firefox-setup.sh` and it will do everything for you.
+- **Linux**: Use `firefox-setup.sh` which will setup everything for you.
 - **Windows**: Follow the instructions on [arkenfox user.js](https://github.com/arkenfox/user.js) and use `user-overrides.js`
 
 ### Extensions
