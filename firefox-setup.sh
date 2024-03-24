@@ -4,14 +4,16 @@
 #
 
 if [ -z "$1" ]; then
-	echo "No argument supplied"
-	exit
+	echo "Please specify new firefox profile name"
+	echo "Usage:"
+	echo "./firefoxSetup.sh <firefox profile name>" 
+	exit 1
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
 	if [ ! -x /Applications/Firefox.app/Contents/MacOS/firefox ]; then
 		echo "Firefox is not installed, please install it"
-		exit
+		exit 1
 	fi
 	
     open -a firefox -CreateProfile "$1" # $HOME/Library/Application Support/Firefox/Profiles/"
@@ -19,7 +21,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	if [ ! -x /usr/bin/firefox ]; then
 		echo "Firefox is not installed, please install it"
-		exit
+		exit 1
 	fi
 
     firefox -CreateProfile "$1" # $HOME/.mozilla/firefox/"
@@ -29,9 +31,9 @@ fi
 if [ -x firefox-setup.temp ]; then
 	rm -rf firefox-setup.temp
 fi
+
 mkdir firefox-setup.temp
 
-# Git clone arkenfox user.js
 git clone https://github.com/arkenfox/user.js.git firefox-setup.temp/user.js/
 
 # Copy user.js, updater.sh and user-overrides.js into FIREFOX_PROFILE_DIR

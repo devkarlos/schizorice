@@ -1,15 +1,23 @@
-Git clone using `git clone --recursive` to clone all submodules (zsh plugins).
+# Schizorice
 
 ## Firefox
-- Run `firefox-setup.sh <username of new firefox profile>` and it will setup [argenfox user.js](https://github.com/arkenfox/user.js) for you.
-- **I use custom firefox sync server, so if you don't plan to use it, delete it from `user-overrides.js`**
-- Extensions
-  - [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
-  - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
-  - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
-    - `.local/share/sponsorblock.backup.json`
-  - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-    - `.local/share/ublock-origin.backup.txt`
 
-## VS Code
-- Copy `.local/share/vscode-settings.json` into `~/Library/Application Support/Code/User`. Rename it to just `settings.json`
+### Hardening
+
+**I use custom DNS server (NextDNS), so first delete or replace it from the `user-overrides.js`**
+
+- **Linux**: Use `firefox-setup.sh` and it will do everything for you.
+- **Windows**: Follow the instructions on [arkenfox user.js](https://github.com/arkenfox/user.js) and use `user-overrides.js`
+
+### Extensions
+
+- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
+- [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
+- [I still don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/)
+- [Skip Redirect](https://addons.mozilla.org/en-US/firefox/addon/skip-redirect/)
+- [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
+- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+  - Import [Actually Legitimate URL Shortener Tool](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt)
+    - Paste it to the `uBlock settings > Filter Lists > Import`
+- [Unhook](https://addons.mozilla.org/en-US/firefox/addon/youtube-recommended-videos/)
+- [xBrowserSync](https://addons.mozilla.org/en-US/firefox/addon/xbs/)

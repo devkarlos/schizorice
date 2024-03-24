@@ -1,0 +1,87 @@
+{
+  // Telemetry
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  // Security
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  // Themes
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.productIconTheme": "Default",
+  "workbench.iconTheme": "vs-seti",
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "line",
+  "editor.fontFamily": "Input Mono, Fira Code, monospace",
+  "editor.fontWeight": "normal",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.renderWhitespace": "selection",
+  "editor.suggestSelection": "first",
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  // Explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // Window
+  "window.autoDetectColorScheme": true,
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  // Workbench Editor
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "workbench.editor.tabActionLocation": "left",
+  // Workbench Settings
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "left",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  // Extensions
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": false,
+    "cpp": false
+  },
+  "cmake.configureOnOpen": true,
+  // Python
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  // Files
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.untrackedChanges": "separate",
+  // Terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Default Light Modern"
+}

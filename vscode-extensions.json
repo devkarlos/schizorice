@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "twxs.cmake",
+    "xaver.clang-format",
+    "llvm-vs-code-extensions.vscode-clangd",
+
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "inferrinizzard.prettier-sql-vscode",
+
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "kevinrose.vsc-python-indent",
+
+    "redhat.java",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency",
+    "vscjava.vscode-java-test",
+
+    "qwtel.sqlite-viewer",
+    "nautime.nautime",
+    "ms-azuretools.vscode-docker"
+  ]
+}
