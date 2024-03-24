@@ -7,6 +7,8 @@
     "ms-vscode.vscode-typescript-next",
     "esbenp.prettier-vscode",
     "inferrinizzard.prettier-sql-vscode",
+    "bradlc.vscode-tailwindcss",
+    "naumovs.color-highlight",
 
     "ms-python.vscode-pylance",
     "ms-python.python",
@@ -20,7 +22,6 @@
     "vscjava.vscode-java-test",
 
     "qwtel.sqlite-viewer",
-    "nautime.nautime",
-    "ms-azuretools.vscode-docker"
+    "nautime.nautime"
   ]
 }
