@@ -21,6 +21,9 @@
   "editor.fontWeight": "normal",
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
   "editor.tabSize": 4,
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": "off",
