@@ -4,10 +4,13 @@
 
 ### Hardening
 
-I use [arkenfox user.js](https://github.com/arkenfox/user.js) to harden my firefox profile.
+On linux you can use [firefox-setup.sh](firefox-setup.sh) which will setup everything for you. However, if you want to do it manually or you are on Windows, follow the steps below.
 
-- **Linux**: Use `firefox-setup.sh` which will setup everything for you.
-- **Windows**: Follow the instructions on [arkenfox user.js](https://github.com/arkenfox/user.js) and use `user-overrides.js`
+1. Create a Firefox profile
+2. Copy [prefsCleaner.bat](https://github.com/arkenfox/user.js/blob/master/prefsCleaner.bat) (Windows) / [prefsCleaner.sh](https://github.com/arkenfox/user.js/blob/master/prefsCleaner.sh) (Linux) to profile's _Root Directory_
+3. Copy [updater.bat](https://github.com/arkenfox/user.js/blob/master/updater.bat) (Windows) / [updater.sh](https://github.com/arkenfox/user.js/blob/master/updater.sh) (Linux) to profile's _Root Directory_
+4. Copy [user-overrides.js](user-overrides.js) to profile's _Root Directory_
+5. Execute updater script
 
 ### Extensions
 

@@ -2,10 +2,8 @@
 // Disable Features //
 ///////////////////////
 
-user_pref("privacy.resistFingerprinting.letterboxing", false); // Disables letterboxing
 user_pref("extensions.pocket.enabled", false); // Disables Pocket integration
 user_pref("identity.fxaccounts.enabled", false); // Disables Firefox Sync features
-user_pref("dom.webaudio.enabled", false); // Disables Web Audio API to prevent fingerprinting
 user_pref("browser.safebrowsing.downloads.remote.enabled", false); // Disables remote safe browsing for downloads
 user_pref("browser.safebrowsing.phishing.enabled", false); // Disables phishing protection
 user_pref("browser.safebrowsing.malware.enabled", false); // Disables malware protection
@@ -18,13 +16,16 @@ user_pref("permissions.default.desktop-notification", 2); // Blocks desktop noti
 user_pref("permissions.default.geo", 2); // Blocks location access by default
 user_pref("geo.enabled", false); // Fully disables location access
 user_pref("media.navigator.enabled", false); // Disables certain media navigator features
+user_pref("dom.webaudio.enabled", false); // Disables Web Audio API to prevent fingerprinting
 
 ////////////////////////
 // Re-enable features //
 ////////////////////////
 
 user_pref("keyword.enabled", true); // Enables searching from the URL bar
-user_pref("browser.startup.page", 0); // Sets the browser to start with a blank page
+user_pref("browser.startup.page", 1); // Browser starts on the Homepage
+user_pref("browser.startup.homepage", "about:home"); // Sets homepage
+user_pref("browser.newtabpage.enabled", true); // Enabled non-empty new tab pages
 user_pref("browser.search.suggest.enabled", true); // Enables search suggestions
 user_pref("browser.urlbar.suggest.searches", true); // Enables search suggestions in the URL bar
 user_pref("webgl.disabled", false); // Enables WebGL
@@ -38,6 +39,7 @@ user_pref("browser.shell.shortcutFavicons", true); // Enables favicons in shortc
 user_pref("privacy.sanitize.sanitizeOnShutdown", false); // Disables clearing data on shutdown
 user_pref("privacy.clearOnShutdown.history", false); // Disables clearing history on shutdown
 user_pref("network.trr.mode", 3); // Next DNS requirement
-user_pref("network.trr.custom_uri", ""); // Custom DNS address
-user_pref("network.trr.uri", ""); // DNS address
+user_pref("network.trr.custom_uri", "https://dns.nextdns.io/69994b"); // Custom DNS address
+user_pref("network.trr.uri", "https://dns.nextdns.io/69994b"); // DNS address
 user_pref("general.autoScroll", true); // Enables middle click scroll
+user_pref("privacy.spoof_english", 2); // Spoofs English by default
