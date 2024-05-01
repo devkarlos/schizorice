@@ -10,7 +10,6 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false); // Disables r
 user_pref("browser.safebrowsing.phishing.enabled", false); // Disables phishing protection
 user_pref("browser.safebrowsing.malware.enabled", false); // Disables malware protection
 user_pref("dom.webnotifications.enabled", false); // Disables web notifications
-//user_pref("browser.urlbar.suggest.topsites", false); // Disables top sites suggestions in URL bar
 user_pref("signon.management.page.breach-alerts.enabled", false); // Disables breach alerts
 user_pref("layout.spellcheckDefault", 0); // Disables spell checking
 user_pref("signon.rememberSignons", false); // Disables password saying prompts
