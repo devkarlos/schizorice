@@ -44,7 +44,7 @@
     ];
     # Configure your nixpkgs instance
     config = {
-      # Disable if you don't want unfree packages
+      # ,able if you don't want unfree packages
       allowUnfree = true;
     };
   };
@@ -109,6 +109,20 @@
       # Remove if you want to SSH using passwords
       PasswordAuthentication = false;
     };
+  };
+  services.xserver.autorun = true;
+
+  # Enable the X11 windowing system
+  services.xserver.enable = true;
+  
+  # Enable a desktop environment (choose one)
+  services.xserver.desktopManager = {
+    plasma5.enable = true;
+  };
+  
+  # Enable a display manager
+  services.xserver.displayManager = {
+    sddm.enable = true;
   };
 
   programs.zsh.enable = true;
