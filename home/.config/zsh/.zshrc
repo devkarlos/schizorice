@@ -1,3 +1,7 @@
+# Homebrew & OrbStack
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
 # Zinit
 source ~/.config/zsh/zinit.zsh
 
@@ -12,14 +16,8 @@ source ~/.config/zsh/completions.zsh
 
 # TODO: Enable command-not-found if installed
 
-# Add SSH keys
-source ~/.config/zsh/ssh.zsh
-
 # Aliases
 source ~/.config/zsh/aliases.zsh
 
 # Exports
 source ~/.config/zsh/exports.zsh
-
-# Keyring
-source ~/.config/zsh/keyring.zsh

@@ -1,7 +1,14 @@
-eval "$(dircolors -b)"
+if command -v dircolors >/dev/null 2>&1; then
+    eval "$(dircolors -b)"
+elif command -v gdircolors >/dev/null 2>&1; then
+    eval "$(gdircolors -b)"
+fi
 
-alias cls="clear"
 alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+alias grep="grep --color=auto"
+alias ip="ip --color=auto"
 
 alias dc="docker compose"
 alias dcu="docker compose up"
@@ -12,28 +19,17 @@ alias dcl="docker compose logs"
 alias dcb="docker compose build"
 
 alias g="git"
-alias ga="git add"
-alias gc="git commit -m"
-alias gp="git push"
-alias gpl="git pull"
-alias gs="git status"
-alias gb="git branch"
-alias gco="git checkout"
 alias gcp="git config user.name 'devkarlos' && git config user.email 'k.raffay@protonmail.com'"
-alias gcd="git config user.name 'Karol Raffay' && git config user.email 'karol.raffay@digishock.cz'"
-alias grep="grep --color=auto"
+alias gcd="git config user.name 'karlos' && git config user.email 'karol.raffay@digishock.cz'"
 
-alias ip="ip --color=auto"
+if command -v gls >/dev/null 2>&1; then
+    alias ls="gls --color=auto --group-directories-first"
+elif [[ "$(uname)" == "Darwin" ]]; then
+    alias ls="ls -G"
+else
+    alias ls="ls --color=auto --group-directories-first"
+fi
 
-alias ls="ls --color=auto --group-directories-first"
-alias ll="ls -l"
-alias la="ls -a"
-alias lla="ls -la"
+alias cc="claude"
 
-alias mv="mv -iv"
-
-alias pacup="pacman -Syu --noconfirm"
-alias paci="pacman -S --noconfirm"
-alias pacr="pacman -Rns --noconfirm"
-
-alias rm="rm -iv"
+alias ssh="kitty +kitten ssh"

@@ -1,0 +1,37 @@
+" Basic settings
+set nocompatible            " Disable compatibility with vi
+syntax on                   " Enable syntax highlighting
+filetype plugin indent on   " Enable file type detection
+set encoding=utf-8          " Default encoding
+
+" UI Configuration
+set number                  " Line numbers
+set relativenumber          " Relative line numbers
+set cursorline              " Highlight current line
+set showmatch               " Show matching brackets
+set hlsearch                " Highlight all search results
+set incsearch               " Searches will be highlighted as you type
+set ignorecase              " Case insensitive search
+set smartcase               " Case sensitive if capital letter in search
+set ruler                   " Show line and column number of the cursor
+set showcmd                 " Show incomplete commands at bottom
+
+" Formatting
+set expandtab               " Use spaces instead of tabs
+set shiftwidth=4            " Number of spaces for indentation
+set tabstop=4               " Number of spaces tabs count for
+set smartindent             " Smart auto-indenting
+set autoindent              " Preserve current indent on new line
+set wrap                    " Wrap long lines
+
+" Behavior
+set backspace=indent,eol,start " Allow backspace over indentation, line breaks and insertion start
+set hidden                  " Allow hidden buffers
+
+" Keep state in ~/.config/vim
+" Ensure these directories are created in the setup script!
+set directory=~/.config/vim/swap//
+set backupdir=~/.config/vim/backup//
+set undodir=~/.config/vim/undo//
+set undofile                " Save undo history
+set viminfo+=n~/.config/vim/viminfo
