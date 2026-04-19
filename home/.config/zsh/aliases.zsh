@@ -30,6 +30,9 @@ else
     alias ls="ls --color=auto --group-directories-first"
 fi
 
-alias cc="claude"
+alias ag="open -a Antigravity"
+alias zshfresh="~/dev/schizorice/scripts/copy-zsh.sh && source ~/.config/zsh/.zshrc"
+alias vimfresh="~/dev/schizorice/scripts/copy-vim.sh"
 
-alias ssh="kitty +kitten ssh"
+alias kcc="CLAUDE_CONFIG_DIR=~/.config/.claude-karlos claude"
+alias dcc="CLAUDE_CONFIG_DIR=~/.config/.claude-digishock claude"

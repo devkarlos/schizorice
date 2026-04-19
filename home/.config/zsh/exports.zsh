@@ -14,7 +14,6 @@ export DIGISHOCK_NGINX_CERT_KEY=./staging/nginx.key
 
 # Move files from ~ to .config
 export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export LESSHISTFILE="$XDG_STATE_HOME/lesshst"
-export COLIMA_HOME="$XDG_CONFIG_HOME/colima"

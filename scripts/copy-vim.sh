@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Get the directory of the script to reliably construct paths
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # Set source and destination directories
