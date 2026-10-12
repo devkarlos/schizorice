@@ -1,0 +1,42 @@
+# Third party repos
+tap "theboredteam/boring-notch"
+
+# Command line tools
+brew "coreutils"
+brew "node"
+brew "pnpm"
+
+# Apps
+cask "1password"
+cask "appcleaner"
+cask "bitwarden"
+cask "theboredteam/boring-notch/boring-notch"
+cask "claude-code"
+cask "google-chrome"
+cask "latest"
+cask "onlyoffice"
+cask "orbstack"
+cask "spotify"
+cask "stats"
+cask "visual-studio-code"
+cask "wifiman"
+
+# VSCode extensions
+vscode "anthropic.claude-code"
+vscode "bradlc.vscode-tailwindcss"
+vscode "dotenv.dotenv-vscode"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.auto-rename-tag"
+vscode "github.copilot-chat"
+vscode "jgclark.vscode-todo-highlight"
+vscode "laravel.vscode-laravel"
+vscode "ms-python.black-formatter"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "naumovs.color-highlight"
+vscode "wakatime.vscode-wakatime"
+vscode "wix.vscode-import-cost"
+vscode "yoavbls.pretty-ts-errors"

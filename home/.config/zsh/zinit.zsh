@@ -31,5 +31,6 @@ zinit ice as"command" from"gh-r" \
 zinit light starship/starship
 
 export STARSHIP_CONFIG=~/.config/zsh/plugins/starship/config.toml
-starship preset plain-text-symbols -o $STARSHIP_CONFIG
 export STARSHIP_CACHE=~/.config/zsh/plugins/starship/cache
+# config.toml je verzovany v repu. Pro reset na cisty preset spust rucne:
+#   starship preset plain-text-symbols -o $STARSHIP_CONFIG

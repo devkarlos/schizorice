@@ -17,3 +17,27 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export LESSHISTFILE="$XDG_STATE_HOME/lesshst"
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+
+# nvm
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Docker / OrbStack multi-project helpers
+[ -f "$HOME/.docker-helpers.zsh" ] && source "$HOME/.docker-helpers.zsh"
+
+# OpenClaw completion
+[ -f "$HOME/.openclaw/completions/openclaw.zsh" ] && source "$HOME/.openclaw/completions/openclaw.zsh"
+
+# Tokeny a hesla - mimo repo, negitovane
+[ -f "$HOME/.config/zsh/secrets.zsh" ] && source "$HOME/.config/zsh/secrets.zsh"

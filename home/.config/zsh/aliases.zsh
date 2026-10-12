@@ -11,15 +11,14 @@ alias grep="grep --color=auto"
 alias ip="ip --color=auto"
 
 alias dc="docker compose"
-alias dcu="docker compose up"
+alias dcu="docker compose up -d"
 alias dcd="docker compose down"
 alias dce="docker compose exec"
 alias dcr="docker compose restart"
 alias dcl="docker compose logs"
 alias dcb="docker compose build"
 
-alias g="git"
-alias gcp="git config user.name 'devkarlos' && git config user.email 'k.raffay@protonmail.com'"
+alias gck="git config user.name 'devkarlos' && git config user.email 'k.raffay@protonmail.com'"
 alias gcd="git config user.name 'karlos' && git config user.email 'karol.raffay@digishock.cz'"
 
 if command -v gls >/dev/null 2>&1; then
@@ -34,5 +33,4 @@ alias ag="open -a Antigravity"
 alias zshfresh="~/dev/schizorice/scripts/copy-zsh.sh && source ~/.config/zsh/.zshrc"
 alias vimfresh="~/dev/schizorice/scripts/copy-vim.sh"
 
-alias kcc="CLAUDE_CONFIG_DIR=~/.config/.claude-karlos claude"
-alias dcc="CLAUDE_CONFIG_DIR=~/.config/.claude-digishock claude"
+alias cc="teamclaude run"

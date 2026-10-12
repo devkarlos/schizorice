@@ -1,6 +1,6 @@
 HISTFILE=~/.config/zsh/.history
-HISTSIZE=1000
-SAVEHIST=2000
+HISTSIZE=50000
+SAVEHIST=50000
 
 # delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_expire_dups_first

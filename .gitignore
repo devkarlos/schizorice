@@ -1,0 +1,14 @@
+# Tajemstvi - nikdy do gitu (repo je verejne)
+secrets.zsh
+*_db_pass
+.env
+.env.*
+
+# Runtime smeti zsh
+.history
+.zsh_history
+.zcompdump*
+.zsh_sessions/
+home/.config/zsh/plugins/starship/cache/
+
+.DS_Store
