@@ -23,7 +23,8 @@ mkdir -p "$DEST_DIR/backup"
 mkdir -p "$DEST_DIR/undo"
 
 # Copy all files and folders, replacing existing ones
+# "$SRC_DIR/." misto "$SRC_DIR/"* - glob by vynechal tecove soubory
 echo "Copying vim configuration files from $SRC_DIR to $DEST_DIR..."
-cp -R "$SRC_DIR/"* "$DEST_DIR/"
+cp -R "$SRC_DIR/." "$DEST_DIR/"
 
 echo "Successfully copied!"

@@ -21,3 +21,6 @@ source ~/.config/zsh/aliases.zsh
 
 # Exports
 source ~/.config/zsh/exports.zsh
+
+# CLI nastroje (fzf, zoxide) - az nakonec, aby prebily klavesove zkratky pluginu
+source ~/.config/zsh/tools.zsh

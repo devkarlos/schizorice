@@ -3,8 +3,12 @@ tap "theboredteam/boring-notch"
 
 # Command line tools
 brew "coreutils"
+brew "fd"
+brew "fzf"
 brew "node"
 brew "pnpm"
+brew "ripgrep"
+brew "zoxide"
 
 # Apps
 cask "1password"

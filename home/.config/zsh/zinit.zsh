@@ -20,7 +20,7 @@ zinit light-mode for \
 
 ## Plugins
 ### Must have
-zinit load zdharma-continuum/history-search-multi-word
+# history-search-multi-word odstranen - Ctrl+R resi fzf (viz tools.zsh)
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 
